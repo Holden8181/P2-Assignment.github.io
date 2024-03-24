@@ -1,9 +1,93 @@
-body {
-    background-color: rgb(135, 207, 248);
+
+
+  
+  body {
+    font-family: Arial, sans-serif; /* Choose a desired font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
   }
-  h1 {
-    color: rgb(1, 14, 133);
+  
+  h1, h2, h3 {
+    margin: 1em 0; /* Margin around headings */
+    font-weight: bold;
   }
+  
   p {
-    color: rgb(0, 0, 0);
+    margin: 0.5em 0; /* Margin around paragraphs */
+    line-height: 1.5; /* Line spacing for readability */
   }
+  
+  a {
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline initially */
+    &:hover { /* Style on hover */
+      color: #0095ff; /* Change color on hover */
+      text-decoration: underline;
+    }
+  }
+
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+.navigation {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.content {
+  padding: 1em;
+}
+
+img {
+  max-width: 100%; /* Responsive image resizing */
+}
+
+img.ribbon {
+  margin-right: 20px; /* Override the general rule for images with class "center" */
+}
+
+.my-list {
+  display: flex; /* Make list items display horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to multiple lines if needed */
+  margin: 1em 0; /* Add some margin for spacing */
+}
+
+.my-item {
+  width: 200px; /* Set a fixed width for each list item */
+  margin: 0 1em 1em 0; /* Add some margin between items */
+  display: flex; /* Make each item a flex container */
+  flex-direction: column; /* Arrange items in a row (default) */
+  align-items: center; /* Vertically center content within each item */
+}
+
+.my-item img {
+  height: 100px;
+  display: block; /* Make image display on its own line */
+  margin-right: 10px; /* Add margin between image and text */
+}
+
+.image-between-paragraphs {
+  display: flex; /* Keep flexbox for horizontal alignment */
+  flex-direction: column; /* Arrange content vertically (stacked) */
+  align-items: left; /* Optionally, center the image horizontally */
+  margin: 1em 0; /* Add some margin for spacing (optional) */
+}
+
+.image-between-paragraphs img {
+  /* Additional styles for the image, if needed */
+  margin: 0 auto 1em auto; /* Adjust margins for image (optional) */
+}
+
+.image-between-paragraphs p {
+  /* Specific styles for the paragraphs, if needed */
+  text-align: left; /* Optionally, justify text (optional) */
+}
